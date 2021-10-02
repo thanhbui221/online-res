@@ -1,72 +1,107 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# Online "Ngon" Restaurant
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## Overview
 
-## About Laravel
+This project was created during my second year of university as part of my coursework for the subject "Software Systems Development Technology". Because my first project was written in PHP, I'd like to use a PHP-related framework for this project. So Laravel was chosen. I had no prior knowledge of the framework, therefore I relied on tutorials and Google when I became stuck while working on this project. Aside from Laravel, I believe one key thing I learned through this project and the course "Software Systems Development Technology" is how to approach an issue, think of a solution/application for the problem, and what steps must be taken while developing the application. I recognize the significance of project documentation. Making an application entails more than simply coding. The process I learned can be applied to any project and works well in groups.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Description
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+The project's goal is to create a web application called "INTERNET RESTAURANT" that will be used to sell dishes and will be utilized by users who want to purchase a dish remotely via the Internet (using a mobile device or PC). People may now buy practically everything online, including clothing, electronics, and consumer items. There is also the option to buy groceries through the website. The network has a large number of food delivery-related websites, such as "Yandex.eda," "Delivery Club," and others. The above-mentioned websites have complicated user interfaces. The built website will have an easy-to-use interface.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Below are some UML diagrams I drawed for the project. Sorry if some of they are all in Russians)
 
-## Learning Laravel
+![image](https://user-images.githubusercontent.com/28446653/135719263-776607d0-9f90-4cb0-8baf-22c74f87a69a.png)
+<b>UML Use Case Diagram</b>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Basiclly, there are two types of users: Client and Admin. 
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Client Functionality:
+- View dishes by category;
+- Formation of an order;
+- Search for the desired dish;
+- Viewing the description of the selected dish;
+- View information about the restaurant;
+- Registration;
+- View the list of orders;
 
-## Laravel Sponsors
+Admin Functionality:
+- Adding new dishes;
+- Changing information about a dish;
+- Removing a dish;
+- View all dishes;
+- Viewing the list of orders;
+- Viewing the list of client users;
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+![image](https://user-images.githubusercontent.com/28446653/135719621-3db521ae-deaa-48ed-9a4a-c2e42243e80b.png)
+<b>Database schema</b>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
+![image](https://user-images.githubusercontent.com/28446653/135719748-77c534fb-af47-4f0e-b298-2b416fde6f4f.png)
+<b>Class diagram</b>
 
-## Contributing
+## Built With
+- Laravel
+- HTML
+- CSS
+- Bootstrap
+- SQL
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Getting Started
 
-## Security Vulnerabilities
+This project uses LAMP tech stack and Laravel.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Laravel is a framework for building web applications with easy-to-use syntax. This choice is due to the following reasons:
+• Laravel simplifies common development tasks such as routing, authentication, sessions, and caching;
+• The framework has an excellent ORM and database layer (eloquent);
+• The framework supports the chosen programming approach;
+• The framework has a Blade Template Engine that helps you work with typical PHP / HTML code;
 
-## License
+P/s: I really like Blade Template Engine of Laravel.
 
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This software package was developed using the Xampp environment. It is the most widely used PHP development environment. The main reason is that Apache distributions for the Apache server, MariaDB, PHP, and Perl are all included in the XAMPP software package. Xampp is mostly used for localhost or local server. This local server is installed on your desktop or laptop computer. Before uploading a website to a remote web server, XAMPP is usually used to test the website. XAMPP provides me with an appropriate environment for testing a PHP project on my local system.
+
+### Prerequisites
+There are many good tutorials online on how to download, install and use Laravel and Xampp.
+
+### Setup
+There are already some basic data in the sql file. But you can always add more if you like.
+
+### Usage
+Some screenshots of the web are below:
+
+![image](https://user-images.githubusercontent.com/28446653/135720169-359eaaef-a08c-41c5-bc1a-56f04fc32920.png)
+
+![image](https://user-images.githubusercontent.com/28446653/135720172-5fc600c2-3118-4df4-8b00-4fa85f708a3c.png)
+
+![image](https://user-images.githubusercontent.com/28446653/135720177-d157a7f1-3c98-480d-8edd-b21e2e2c6e7f.png)
+
+![image](https://user-images.githubusercontent.com/28446653/135720181-8ca7b589-bd3a-4621-9131-203e89272416.png)
+
+![image](https://user-images.githubusercontent.com/28446653/135720185-4f976b4e-522c-4136-95b9-59730605852c.png)
+
+![image](https://user-images.githubusercontent.com/28446653/135720190-6cccd869-f49f-4dae-95e6-97947352a8c8.png)
+
+![image](https://user-images.githubusercontent.com/28446653/135720195-cef8cbad-e98c-4460-bdf6-e7dad90809cd.png)
+
+![image](https://user-images.githubusercontent.com/28446653/135720200-0f4d1d74-a762-4b7a-83aa-edbffa93110d.png)
+
+![image](https://user-images.githubusercontent.com/28446653/135720205-a4db7a54-744b-4dc4-a8ac-76afcf7f39b9.png)
+
+![image](https://user-images.githubusercontent.com/28446653/135720210-7ee97b5c-229d-4ff3-b4ae-efe29f7a9437.png)
+
+## Improvements
+Good things from the first project are also the good things of this project. Moreoever, my supervisor assessed that the application was technologically advanced 🙂 thanks to the well-developed program model, well-defined subtasks, and data structures. The software is written in an appealing style, and the code is easily readable. Wherever possible, code reuse is used. Also, the generated modules are sufficiently self-contained.
+
+But of course, I still think I could do better. The web has many things to improve:
+- It is right now not responsive.
+- The coding still can be improved.
+- Many functions can be added: paying funciton for example.
+- At the time, the web is only concerned with one restaurant. The web can be improved by ordering dishes from a variety of restaurants.
+
+
+
+
+
+
+
+
+
